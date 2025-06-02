@@ -5,6 +5,7 @@
 
 *, *::before, *::after {
     box-sizing: border-box;
+    /* outline: 1px solid red; */
   }
 
 html, body, div, span, applet, object, iframe,
@@ -442,6 +443,12 @@ li.service-item > :first-child{
 
 }
 
+@media screen and (max-width: 1024px) {
+  .container .more-info {
+    margin-right: 0;
+  }
+}
+
 .container .more-info span{
     font-weight: 700;
     font-size: 1.75rem;
@@ -451,7 +458,7 @@ li.service-item > :first-child{
 
 span.line{
     display: block;
-    width: 100vw;
+    width: 100%;
     height: 1px;
     border: 1px solid #000;
 }
@@ -724,6 +731,12 @@ section.consultant .content{
     margin-top: -30px;
     z-index: 10;
 }
+@media screen and (max-width: 1024px) {
+  .consultant .right-label-item1 {
+    margin-left: 0;
+  }
+}
+
 
 @media screen and (max-width: 768px) {
     section.consultant .container{
@@ -838,7 +851,6 @@ section.consultant .content{
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 1.5;
-    word-break: keep-all;
 }
 
 li.podcast_item{
@@ -894,7 +906,7 @@ li.podcast_item a.btn{
 }
 
 .script .left-container {
-    height: 100vh;
+    height: 834px;
     background-image: url("../2022-web-layout-training/2025-web-camp/desktop/index/photo9.png");
     background-size: cover;
     background-position: center;
